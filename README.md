@@ -19,4 +19,18 @@ if you have more than 16 gb ram the bot will generate your image else unsplash w
 
 if everything is good enjoy
 
+# HOW TO AUTOMATE TO SEND EVERYDAY
+
+search on windows task schedul
+create a task
+define a name
+define the time
+define action run a file/script
+browse search main.py in python_social_media folder
+new action
+
+
+
+
+
 
