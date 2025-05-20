@@ -55,6 +55,12 @@ def random(query="laptop"):
     save_as = './img/hey.jpg'
 
     if (total < 16):
+        img: str = os.getenv('IMAGE')
+        if not img:
+            print("Veuillez mettre un terme anglais pour définir votre thème dans IMAGE du fichier .env")
+            return
+        
+        query = img
         API_URL = "https://api.unsplash.com/photos/random/?client_id=tVobtEo0P6rmXCWfYkSZC4SYF_StTRb5GAbJdrDA1Go&query="+query
 
         response = requests.get(

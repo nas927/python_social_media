@@ -19,7 +19,7 @@ def bot(msg: str = "") -> dict:
 	# Define the request payload (data)
 	data = {
 		"model": "deepseek/deepseek-chat:free",
-		"messages": [{"role": "user", "content": MESSAGE}]
+		"messages": [{"role": "user", "content": "you are a comunity manager and you post for this theme not more than 30 words: " + MESSAGE}],
 	}
 
 	# Send the POST request to the DeepSeek API
