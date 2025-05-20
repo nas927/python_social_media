@@ -1,0 +1,11 @@
+gradio_client==1.5.2
+python-dotenv==1.0.1
+tweepy==4.15.0
+diffusers==0.33.1
+transformers==4.51.3
+accelerate==1.6.0
+safetensors==0.5.3
+scipy==1.15.2
+psutil==7.0.0
+moviepy==2.1.2
+pillow==10.4.0
