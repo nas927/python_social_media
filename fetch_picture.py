@@ -54,7 +54,7 @@ def random(query="laptop"):
     os.makedirs("img", exist_ok=True)
     save_as = './img/hey.jpg'
 
-    if (total < 64):
+    if (total < 16):
         API_URL = "https://api.unsplash.com/photos/random/?client_id=tVobtEo0P6rmXCWfYkSZC4SYF_StTRb5GAbJdrDA1Go&query="+query
 
         response = requests.get(
