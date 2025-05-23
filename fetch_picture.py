@@ -54,7 +54,7 @@ def random(query="laptop"):
     os.makedirs("img", exist_ok=True)
     save_as = './img/hey.jpg'
 
-    if (total < 16):
+    if (total < 64):
         img: str = os.getenv('IMAGE')
         if not img:
             print("Veuillez mettre un terme anglais pour définir votre thème dans IMAGE du fichier .env")

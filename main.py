@@ -5,7 +5,9 @@ import twitter
 import discord
 import tiktok
 import facebook
+import instagram
 import os
+from colorama import Fore, Style, init
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -41,6 +43,16 @@ def do_all():
     else:
         print('Vous devez fournir un DISCORD_ID et DISCORD_CHANEL_ID au fichier .env pour utiliser discord')
         print("https://discord.com/developers/docs/quick-start/getting-started#step-1-creating-an-app")
+        
+    if (os.getenv("FACEBOOK_CLIENT_ID") and os.getenv("FACEBOOK_CLIENT_SECRET")):
+        fb = facebook.Facebook()
+        insta = instagram.Instagram()
+        
+        fb.post(message)
+        insta.post_insta(message)
+    else:
+        print('Vous devez fournir un FACEBOOK_CLIENT_ID et FACEBOOK_CLIENT_SECRET au fichier .env pour utiliser facebook et instagram')
+        print("https://developers.facebook.com/docs/facebook-login/facebook-login-for-business")
 
     # if os.getenv("TIKTOK_CLIENT_KEY") and os.getenv("TIKTOK_SECRET_KEY"): 
     #     tiktok_api = tiktok.Tiktok()

@@ -182,4 +182,3 @@ class Linkedin:
     def post(self, message: str):
         urn: str = self.get_user_urn()
         self.create_post(message, urn)
-        
